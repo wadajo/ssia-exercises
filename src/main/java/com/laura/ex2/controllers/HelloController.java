@@ -8,6 +8,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(){
+        System.getLogger("new").log(System.Logger.Level.INFO,"Llamando");
         return "Hola";
     }
 }
